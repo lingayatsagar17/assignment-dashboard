@@ -1,0 +1,10 @@
+#box{
+    width:200px;
+    height:200px;
+    background: skyblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
