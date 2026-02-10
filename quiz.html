@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Quiz Page</title>
+  <link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+
+<div class="quiz-container">
+
+  <!-- Header -->
+  <div class="quiz-header">
+    <span id="q-title">Question 1 of 10</span>
+    <input type="range" min="1" max="10" value="1" disabled>
+  </div>
+
+  <!-- Question -->
+  <div class="question"></div>
+
+  <!-- Answer Box -->
+  <div class="answer-box">
+    <textarea
+      id="answer"
+      placeholder="Write your answer here..."
+    ></textarea>
+
+    <div class="icons">
+      <button type="button">↑</button>
+      <button type="button">🎤</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="quiz-footer">
+    <div class="timer" id="timer">2:00</div>
+    <button class="next-btn">NEXT</button>
+  </div>
+
+</div>
+
+<script src="quiz.js"></script>
+</body>
+</html>
