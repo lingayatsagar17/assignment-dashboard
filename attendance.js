@@ -8,8 +8,8 @@ setInterval(updateClock, 1000);
 updateClock();
 
 
-const SESSION_START_HOUR = 15;   // change time for testing according to you 
-const SESSION_END_HOUR = 16;     // change time for testing according to you
+const SESSION_START_HOUR = 18;   // change time for testing according to you 
+const SESSION_END_HOUR = 19;     // change time for testing according to you
 
 const FULL_ATTENDANCE_LIMIT = 10;   // <=10 min = FULL
 const HALF_ATTENDANCE_LIMIT = 30;   // <=30 min = HALF
@@ -94,6 +94,7 @@ videoCard.addEventListener("click", () => {
   const hour = now.getHours();
   const minute = now.getMinutes();
 
+  // ⛔ Outside allowed time
   if (hour < SESSION_START_HOUR || hour >= SESSION_END_HOUR) {
     applyStatus("locked");
     return;
@@ -102,11 +103,13 @@ videoCard.addEventListener("click", () => {
   const todayKey = getTodayKey();
   const saved = localStorage.getItem(todayKey);
 
+  // ✅ If already marked today → just go to video page
   if (saved) {
-    loadVideo();
+    window.location.href = "video.html";
     return;
   }
 
+  // ✅ Calculate attendance for first click
   let type;
 
   if (minute <= FULL_ATTENDANCE_LIMIT) {
@@ -120,8 +123,10 @@ videoCard.addEventListener("click", () => {
   localStorage.setItem(todayKey, JSON.stringify({ type, minute }));
   applyStatus(type, minute);
 
-  loadVideo();
+  // ✅ Redirect instead of playing inside dashboard
+  window.location.href = "video.html";
 });
+
 
 
 function loadVideo() {
@@ -137,4 +142,4 @@ function loadVideo() {
   `;
 }
 
-});
+}); 

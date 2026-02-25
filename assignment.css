@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f4f6fb;
+  padding: 30px;
+  color: #111827;
+}
+
+/* ===== Layout ===== */
+.container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+/* ===== Card Common ===== */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid #eef1f6;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.04);
+}
+
+/* ===== Top Badge ===== */
+.badge {
+  display: inline-block;
+  background: #eef2ff;
+  color: #4f46e5;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 14px;
+}
+
+/* ===== Title ===== */
+h1 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* 2 Column Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+/* ===== Meta Section ===== */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 14px;
+  color: #6b7280;
+  margin-bottom: 20px;
+}
+
+.status {
+  background: #fff7ed;
+  color: #ea580c;
+  padding: 5px 12px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* ===== Section Titles ===== */
+.card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* ===== Paragraph ===== */
+.card p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #0d0d0d;
+}
+
+/* ===== Requirements List ===== */
+ul {
+  list-style: none;
+}
+
+ul li {
+  font-size: 14px;
+  color: #040404;
+  margin-bottom: 12px;
+  padding-left: 22px;
+  position: relative;
+}
+
+ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+  color: #4f46e5;
+}
+
+/* ===== Form Inputs ===== */
+input, textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  font-size: 14px;
+  margin-bottom: 14px;
+  transition: 0.2s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+textarea {
+  min-height: 100px;
+  resize: none;
+}
+
+/* ===== Upload Box ===== */
+.upload-box {
+  border: 2px dashed #d1d5db;
+  border-radius: 14px;
+  padding: 28px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  margin-bottom: 18px;
+}
+
+.upload-box:hover {
+  border-color: #4f46e5;
+  background: #f9fafb;
+}
+
+/* ===== Submit Button ===== */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 14px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+.submit-btn:hover {
+  background: #1e40af;
+  transform: translateY(-2px);
+}
+
+/* ===== BLUE SUMMARY CARD ===== */
+.summary-card {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  border: none;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.35);
+}
+
+.summary-card .label {
+  font-size: 12px;
+  letter-spacing: 1px;
+  opacity: 0.85;
+  margin-bottom: 8px;
+}
+
+.summary-card h2 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 22px;
+}
+
+.summary-card .divider {
+  height: 1px;
+  background: rgba(8, 8, 8, 0.3);
+  margin: 18px 0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  font-size: 14px;
+}
+
+.info-row span {
+  opacity: 0.85;
+}
+
+.info-row strong {
+  font-weight: 600;
+}
+
+/* Avatars */
+.avatars {
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 28px;
+  height: 28px;
+  background: white;
+  border-radius: 50%;
+  margin-left: -8px;
+  border: 2px solid #2563eb;
+}
+
+.avatar:first-child {
+  margin-left: 0;
+}
+
+.avatar.more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: 600;
+  background: rgba(3, 3, 3, 0.2);
+  color: white;
+  border: 2px solid white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 900px) {
+
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+input {
+  margin-bottom: 0;
+}
+
+textarea {
+  margin: 18px 0;
+}

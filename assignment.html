@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Assignment Page</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assignment.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LEFT SECTION -->
+  <div class="left">
+
+  <!-- Top Assignment Card -->
+  <div class="card">
+    <span class="badge">Module 5: Backend Development</span>
+    <h1>Build a Full-Stack E-commerce API</h1>
+
+    <div class="meta">
+      <span>📅 Deadline: Sept 30, 2026</span>
+      <span>⚡ Intermediate</span>
+      <span class="status">Pending</span>
+    </div>
+
+    <h3>Assignment Description</h3>
+    <p>
+      Develop a RESTful API using Node.js and Express. Your API should handle product catalogs,
+      user authentication, and order processing. Ensure all endpoints follow REST best practices.
+    </p>
+  </div>
+
+
+  <!-- Core + AI Rules SIDE BY SIDE -->
+  <div class="grid-2">
+
+    <div class="card">
+      <h3>Core Requirements</h3>
+      <ul>
+        <li>Database schema design with MongoDB</li>
+        <li>JWT-based authentication middleware</li>
+        <li>Full CRUD operations for products and orders</li>
+        <li>Error handling and request validation</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>AI Usage Rules</h3>
+      <ul>
+        <li>Allowed for debugging & boilerplate</li>
+        <li>Core logic must be original</li>
+        <li>No copy-pasting full solutions</li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- Submit Section -->
+  <div class="card">
+    <h3>Submit Your Work</h3>
+
+    <div class="grid-2">
+      <input type="text" placeholder="GitHub Repository URL">
+      <input type="text" placeholder="Live Demo Link (Optional)">
+    </div>
+
+    <textarea placeholder="Briefly explain your architectural choices..."></textarea>
+
+    <div class="upload-box" id="uploadBox">
+      Drag & Drop or Click to Upload
+      <input type="file" id="fileInput" hidden>
+    </div>
+
+    <button class="submit-btn">Submit Assignment</button>
+  </div>
+
+</div>
+  <!-- RIGHT SIDEBAR -->
+  <div class="right">
+
+  <div class="card summary-card">
+    <p class="label">TIME REMAINING</p>
+    <h2 id="countdown">24 hours left</h2>
+
+    <div class="divider"></div>
+
+    <div class="info-row">
+      <span>Total Marks</span>
+      <strong>100 Pts</strong>
+    </div>
+
+    <div class="info-row">
+      <span>Team</span>
+      <div class="avatars">
+        <div class="avatar"></div>
+        <div class="avatar"></div>
+        <div class="avatar more">+2</div>
+      </div>
+    </div>
+
+    <div class="info-row">
+      <span>Assigned Mentor</span>
+      <strong>Gaurav G.</strong>
+    </div>
+  </div>
+
+</div>
+<script src="assignment.js"></script>
+</body>
+</html>
