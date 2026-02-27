@@ -13,7 +13,7 @@ body {
   color: #111827;
 }
 
-/* ===== Layout ===== */
+
 .container {
   max-width: 1300px;
   margin: auto;
@@ -28,7 +28,6 @@ body {
   gap: 28px;
 }
 
-/* ===== Card Common ===== */
 .card {
   background: #ffffff;
   border-radius: 18px;
@@ -37,7 +36,6 @@ body {
   box-shadow: 0 8px 25px rgba(0,0,0,0.04);
 }
 
-/* ===== Top Badge ===== */
 .badge {
   display: inline-block;
   background: #eef2ff;
@@ -49,20 +47,18 @@ body {
   margin-bottom: 14px;
 }
 
-/* ===== Title ===== */
 h1 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 16px;
 }
 
-/* 2 Column Grid */
 .grid-2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
 }
-/* ===== Meta Section ===== */
+
 .meta {
   display: flex;
   align-items: center;
@@ -81,21 +77,18 @@ h1 {
   font-weight: 600;
 }
 
-/* ===== Section Titles ===== */
 .card h3 {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
-/* ===== Paragraph ===== */
 .card p {
   font-size: 14px;
   line-height: 1.6;
   color: #0d0d0d;
 }
 
-/* ===== Requirements List ===== */
 ul {
   list-style: none;
 }
@@ -116,7 +109,6 @@ ul li::before {
   color: #4f46e5;
 }
 
-/* ===== Form Inputs ===== */
 input, textarea {
   width: 100%;
   padding: 13px 14px;
@@ -138,7 +130,6 @@ textarea {
   resize: none;
 }
 
-/* ===== Upload Box ===== */
 .upload-box {
   border: 2px dashed #d1d5db;
   border-radius: 14px;
@@ -156,7 +147,6 @@ textarea {
   background: #f9fafb;
 }
 
-/* ===== Submit Button ===== */
 .submit-btn {
   width: 100%;
   padding: 14px;
@@ -176,7 +166,6 @@ textarea {
   transform: translateY(-2px);
 }
 
-/* ===== BLUE SUMMARY CARD ===== */
 .summary-card {
   background: linear-gradient(135deg, #1d4ed8, #2563eb);
   color: white;
@@ -221,7 +210,6 @@ textarea {
   font-weight: 600;
 }
 
-/* Avatars */
 .avatars {
   display: flex;
   align-items: center;
@@ -251,7 +239,6 @@ textarea {
   border: 2px solid white;
 }
 
-/* ===== Responsive ===== */
 @media (max-width: 900px) {
 
   .container {
@@ -270,4 +257,82 @@ input {
 
 textarea {
   margin: 18px 0;
+}
+
+
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.small-card h3 {
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+
+.feedback-box {
+  background: #f9fafb;
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  color: #6b7280;
+}
+
+.feedback-box .waiting {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #374151;
+  font-size: 14px;
+}
+
+.feedback-box span {
+  font-size: 12px;
+}
+
+.checklist {
+  list-style: none;
+  padding: 0;
+}
+
+.checklist li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #374151;
+}
+
+.checklist input {
+  width: 16px;
+  height: 16px;
+}
+
+.help-card {
+  background: #eef2ff;
+  border: 1px solid #e0e7ff;
+}
+
+.help-card p {
+  font-size: 13px;
+  margin: 10px 0 16px;
+  color: #374151;
+}
+
+.join-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  border: none;
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.join-btn:hover {
+  background: #2563eb;
+  color: white;
 }
