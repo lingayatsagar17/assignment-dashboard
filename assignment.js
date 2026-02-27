@@ -16,7 +16,7 @@ setInterval(updateCountdown, 1000);
 updateCountdown();
 
 
-// File Upload
+
 const uploadBox = document.getElementById("uploadBox");
 const fileInput = document.getElementById("fileInput");
 
